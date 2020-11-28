@@ -12,7 +12,7 @@
 ### Association
 
 - has_many :room_users
-- has_many :room, through: room_users
+- has_many :rooms, through: room_users
 - has_many :messages
 
 ## rooms テーブル
@@ -35,7 +35,7 @@
 ### Associations
 
 - belongs_to :room
-- belongs_to :users
+- belongs_to :user
 
 ## messages テーブル
 | Column  | Type       | Options                        |
@@ -46,7 +46,7 @@
 
 ### Associations
 - belongs_to :room
-- belongs_to :users
+- belongs_to :user
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
